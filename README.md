@@ -1,4 +1,5 @@
 # Postfix-calculator
+A simple caclulator that evaluates postfix expressions (to learn about Queues, Stacks, and Exception handling).
 
 ## How to use the calculator?
 If you clone this repository, then in the `Postfix-calculator` directory run (in Windows)
@@ -33,5 +34,5 @@ Operators supported: +, -, *, /, ^
 * The calculator's evaluation logic is implemented in the `evaluate()` method of `PfCalculator.java`:
     * Input: A `Queue`.
     * Remove each element from the input queue one at a time and push it to a `Stack`
-    If the element is recognized as an operator, pop 2 string values off of the `Stack`, convert them to their numeric equivalents, perform the calculation with those values, and push the result (as a string) back onto the `Stack`. Otherwise, simply push the token onto the stack. When the input queue is empty, then pop the stack for the result and return it.
+    If the element is recognized as an operator, pop 2 string values off of the stack, convert them to their numeric equivalents, perform the calculation with those values, and push the result (as a string) back onto the stack. Otherwise, simply push the token onto the stack. When the input queue is empty, then pop the stack for the result and return it.
 
